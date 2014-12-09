@@ -296,8 +296,8 @@ int id showTitle 0x7f060006
 int id split_action_bar 0x7f06001e
 int id submit_area 0x7f060039
 int id tabMode 0x7f060002
+int id tbPassword 0x7f060041
 int id title 0x7f06002b
-int id toggleButton1 0x7f060041
 int id top_action_bar 0x7f060020
 int id tvResults 0x7f060042
 int id txtVDisplay 0x7f06003c

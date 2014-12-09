@@ -1141,8 +1141,8 @@ containing a value of this type.
         public static final int split_action_bar=0x7f06001e;
         public static final int submit_area=0x7f060039;
         public static final int tabMode=0x7f060002;
+        public static final int tbPassword=0x7f060041;
         public static final int title=0x7f06002b;
-        public static final int toggleButton1=0x7f060041;
         public static final int top_action_bar=0x7f060020;
         public static final int tvResults=0x7f060042;
         public static final int txtVDisplay=0x7f06003c;
