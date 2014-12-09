@@ -1,6 +1,7 @@
 package com.example.practice;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -20,6 +21,9 @@ public class Menu extends ListActivity{
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);
+		Class ourClass = Class.forName("com.example.practice.startingPoint");
+		Intent ourIntent = new Intent(Menu.this, ourClass);
+		startActivity(ourIntent);
 	}
 
 
