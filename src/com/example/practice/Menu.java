@@ -21,9 +21,14 @@ public class Menu extends ListActivity{
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);
-		Class ourClass = Class.forName("com.example.practice.startingPoint");
-		Intent ourIntent = new Intent(Menu.this, ourClass);
-		startActivity(ourIntent);
+		String cheese = classes[position];
+		try{
+			Class ourClass = Class.forName("com.example.practice." + cheese);
+			Intent ourIntent = new Intent(Menu.this, ourClass);
+			startActivity(ourIntent);
+		}catch(ClassNotFoundException e){
+			e.printStackTrace();
+		}
 	}
 
 
