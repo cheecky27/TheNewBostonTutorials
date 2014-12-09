@@ -1,6 +1,7 @@
 package com.example.practice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class Splash extends Activity{
@@ -10,11 +11,12 @@ public class Splash extends Activity{
 		Thread timer = new Thread(){
 			public void run(){
 				try{
-
+					sleep(5000);//milliseconds
 				}catch (InterruptedException e){
-
+					e.printStackTrace();
 				}finally{
-
+					Intent openStartingPoint = new Intent("com.example.practice.STARTINGPOINT");
+					startActivity(openStartingPoint);
 				}
 			}
 		};
