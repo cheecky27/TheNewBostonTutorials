@@ -2,12 +2,16 @@ package com.example.practice;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 public class Splash extends Activity{
+	MediaPlayer ourSong;
 	public void onCreate(Bundle TravisLoveBacon){
 		super.onCreate(TravisLoveBacon);
 		setContentView(R.layout.splash);
+		ourSong = MediaPlayer.create(Splash.this, R.raw.sms);
+		ourSong.start();
 		Thread timer = new Thread(){
 			public void run(){
 				try{
@@ -27,6 +31,7 @@ public class Splash extends Activity{
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
+		ourSong.release();
 		finish();
 	}
 	
