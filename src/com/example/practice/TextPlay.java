@@ -1,6 +1,7 @@
 package com.example.practice;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.Gravity;
@@ -40,7 +41,12 @@ public class TextPlay extends Activity{
 				}else if(check.contentEquals("right")){
 					display.setGravity(Gravity.RIGHT);
 				}else if(check.contentEquals("blue")){
+					display.setTextColor(Color.BLUE);
+				}else if(check.contains("WTF")){
 					
+				}else{
+					display.setText("invalid");
+					display.setGravity(Gravity.CENTER);
 				}
 			}
 		});
