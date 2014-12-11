@@ -14,15 +14,18 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class TextPlay extends Activity{
+
+	Button chkCmd;
+	ToggleButton passTog;
+	EditText input;
+	TextView display;
+
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.txt);
 
-		Button chkCmd = (Button)findViewById(R.id.bResult);
-		final ToggleButton passTog = (ToggleButton) findViewById(R.id.tbPassword);
-		final EditText input = (EditText) findViewById(R.id.etCommand);
-		final TextView display = (TextView) findViewById(R.id.tvResults);
-
+		baconAndEggs();
+	
 		passTog.setOnClickListener(new View.OnClickListener(){
 			public void onClick(View v){
 				if(passTog.isChecked()){
@@ -66,5 +69,12 @@ public class TextPlay extends Activity{
 				}
 			}
 		});
+	}
+	
+	public void baconAndEggs(){
+		Button chkCmd = (Button)findViewById(R.id.bResult);
+		passTog = (ToggleButton) findViewById(R.id.tbPassword);
+		input = (EditText) findViewById(R.id.etCommand);
+		display = (TextView) findViewById(R.id.tvResults);
 	}
 }
