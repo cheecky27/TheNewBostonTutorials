@@ -1,5 +1,7 @@
 package com.example.practice;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -43,7 +45,10 @@ public class TextPlay extends Activity{
 				}else if(check.contentEquals("blue")){
 					display.setTextColor(Color.BLUE);
 				}else if(check.contains("WTF")){
-					
+					Random crazy = new Random();
+					display.setText("WTF");
+					display.setTextSize(crazy.nextInt(75));
+					display.setTextColor(Color.rgb(crazy.nextInt(265), crazy.nextInt(265), crazy.nextInt(265)));
 				}else{
 					display.setText("invalid");
 					display.setGravity(Gravity.CENTER);
