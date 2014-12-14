@@ -9,22 +9,22 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_launcher" >
+        android:src="@drawable/ic_launcher">
     </ImageView>
 
     <ImageButton
         android:id="@+id/ibTakePic"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" >
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher" >
+
     </ImageButton>
 
     <Button
-        android:text="Set Wallpaper"
         android:id="@+id/bSetWallPaper"
         android:layout_width="125dp"
-   		android:layout_height="wrap_content"
-   		android:layout_gravity="center">
-    </Button>
+        android:layout_height="wrap_content"
+        android:text="Set Wallpaper" />
 
 </LinearLayout>
