@@ -9,7 +9,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_launcher">
+        android:src="@drawable/ic_launcher" >
     </ImageView>
 
     <ImageButton
@@ -18,13 +18,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/ic_launcher" >
-
     </ImageButton>
 
     <Button
         android:id="@+id/bSetWallPaper"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Set Wallpaper" />
 
 </LinearLayout>
