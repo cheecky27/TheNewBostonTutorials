@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Menu extends ListActivity{
-	String classes[] = {"startingPoint", "TextPlay", "Email", "Camera", "example4",
+	String classes[] = {"startingPoint", "TextPlay", "Email", "Camera", "Data",
 			"example5", "example6"};
 
 	@Override
